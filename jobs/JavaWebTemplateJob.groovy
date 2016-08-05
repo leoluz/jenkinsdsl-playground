@@ -6,6 +6,9 @@ job(jobName) {
     }
     steps {
         shell('echo Job ${jobName}: This is step 1!')
+        parameters {
+            stringParam('jobName', jobName, 'The job name')
+        }
         triggers {
             cron('H/1 * * * *')
         }
