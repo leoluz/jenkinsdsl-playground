@@ -1,5 +1,5 @@
 def jobName = 'JavaWebTemplateBuild'
-def repoUrl = 'https://github.com/leoluz/java-web-template.git'
+def repoUrl = 'leoluz/java-web-template'
 job(jobName) {
     scm {
         github(repoUrl)
